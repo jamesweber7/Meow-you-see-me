@@ -48,5 +48,26 @@
             "rarity" : 5,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAYAAAD17ghaAAAAAXNSR0IArs4c6QAAAbhJREFUWIXtls9KAlEUh39G22iRi8DIbeTUQwhKtm0jtRN6AfeB0N4XENolbtpmjOBD1BhtFQUXtogeQFdHzj333rl3nMlNfiAyw73z+865d/4AO/4Ty3Z7Kc/tuQb8ZTgA7NsG5prNHD///vnlLXd5fqbMjStME+CTPq6ufTMVuOzF22vs2Jw8QbYyvFxrJZIY9tXxJCI7q+wBgoeXa611+M3do7cAnyevydE6wNsng1+eH7wFJNQRuT+MHcg6nF9PbmajQNbhcRiXIOmGS8Kw31KWwboE2yK1wGLcy15A3sO20MW4h3yxrhxnIuCCQvPFuvHYhqkwTYA2iKsLMswVbmNrm9D2INJuQwAIw1B7e93eP6UKJpxPwjAMl5UoAgDwf9eSSLqdBrqdBubTyfonwwHRAVPlnOOTU+VYPrBIcj6doBJFGATBuohBEKBarfoJ8El0IQAolUoAgO+fX6vkfDqJq0GTsH6QcBHJ0eFBjAAUaV6MCa0ltmWg6l2MRiMlmCAB2QHjXUDMZrONPlJJQuLcA1lKcAqFgjXHKZBWJC48kcAmIq7wjQR8RXzCUwnYRHyDd+wgVrbO2HAGTCYxAAAAAElFTkSuQmCC"
         }
-    ]
+    ],
+    "special" : {
+        "totals" : [
+                {
+                    "total" : 100,
+                    "cat" : "Hundred Cat"
+                },
+                {
+                    "total" : 1000,
+                    "cat" : "Thousand Cat"
+                }
+        ],
+        "sites" : [
+            {   
+                "urls" : [
+                    test.com
+                ],
+                "cat" : "Charity Cat",
+                "chance": 1
+            }
+        ]
+    }
 }
