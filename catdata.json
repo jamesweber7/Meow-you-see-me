@@ -99,8 +99,8 @@
                 "urls" : [
                     "test.com"
                 ],
-                "cat" : "Charity Cat",
-                "chance" : 1
+                "chance" : 1,
+                "cat" : "Charity Cat"
             }
         ]
     }
