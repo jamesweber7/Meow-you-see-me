@@ -10,6 +10,7 @@
     "cats" : [
         { 
             "name" : "Ghost Cat",
+            "rarity" : 5,
             "data" : "data"
         }
     ]
