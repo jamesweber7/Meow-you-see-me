@@ -1,7 +1,7 @@
 {
     "version" : "0.0.1",
     "default_cat" : {
-        "name" : "default"
+        "name" : "default",
         "rarity" : 100,
         "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAT9JREFUSInFlsFtwzAMRUmjpyAdIPACHcDnzOMhOojn6S1ABuih1yADJOhVPVh0aeaTUgy7JWBIpkg+UrQFEW0s6TIkIqJGJlsAdGyevbQ9rwWxOoZKBaypWOwj26LBWvKyRhBu+2meLgO2UQazqrRzGMDYIVtue25qnWt1nr7JGWzeI1gR2qZanaf/s68OVvT1fnIdvL6U/P+3oikLlb2tJFqDsWTiVSVBYIODNWPHxZMhClICaPkFXcHqoTqOK3Lgjj/seUj08T2u6BHBI7maR0mTzrk3xx3B8RmITtIkyhNIjI67cS6gfbZ8BcFvebzHOXCHDlUBoqD28fykIg0jyj1CsofaR5GKbJJ5V7jr+eGOkD4XnhLO9nE3fnXwMrIYpgFv84tOeOtZCrSQImgJEEGqQbVAD/I0yANGAJEfpratK1JTkx8AAAAASUVORK5CYII="
     },
