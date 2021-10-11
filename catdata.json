@@ -97,7 +97,7 @@
         "sites" : [
             {   
                 "urls" : [
-                    "test.com"
+                    "againstmalaria.com", "unitedway.org", "feedingamerica.org", "directrelief.org", "salvationarmyusa.org", "stjude.org", "woundedwarriorproject.org"
                 ],
                 "chance" : 1,
                 "cat" : "Charity Cat"
