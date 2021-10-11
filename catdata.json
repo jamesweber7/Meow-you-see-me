@@ -63,7 +63,7 @@
         "sites" : [
             {   
                 "urls" : [
-                    test.com
+                    "test.com"
                 ],
                 "cat" : "Charity Cat",
                 "chance": 1
