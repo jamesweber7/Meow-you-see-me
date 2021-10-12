@@ -97,6 +97,51 @@
             "data" : "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAAAXNSR0IArs4c6QAAAf5JREFUSIm9VrtKA0EUPRMULNMZUmhjm0JXFi0SyH5ABBVtLAQDNtpZ+QH+QGwEBQsrIaA/EEGLiAQsLK20CD6aLRebsVhnc+fuzGY2UQ+EncfZe+65c2cJ8E/o3L5JACjwhb8QorGFSTColQR/cVQxvmYUNAn/VgU0JzxoUCulXujcvqXWTDwb1yqogkg5yEEIQblWHuWaRHlWEoCMY8RoeJ5seF4yV/uuPNo4puaQNOOVxUVt87rXS7mVUjrxAIgCnf1kkl0Cne/MU9yCjaQyU5nSMcs6Fy9X09AgWU1jaq6hgjQYBw/ien2GCmYhqJWcz5BCO0PbJ406UGNeUj62ISVgc8mFXPcYL91Gq96cbPeecXP3PjTbvAhqJf0ernpzsjz5BQCoV6d/XQwgJaViANDqviTjcd3S3hAmMQolnEf086OfjDfXF7RjK2SJAcD+8iyAuMT16rQWjIuoXxbE3tKM891Tbi/bj0587i63oKtoGIbafLcZJMLWj7cNqsQba/NWMT+Ky+pHffhRHyenHf1PFHW5s3WEh6ky/KifPM8uDlOBW92XlEvujGO3GcT38Pj+VQBApXmOh6kyAGjPSvPc6pRDuaMOKSbUwBR0FKiq2DBh3RmC6sFVaq1YLCIMw6Q6FKpxRhI0iQHma8ChEWg3UTydbgMYnPU4+AZLsEFw00vBKwAAAABJRU5ErkJggg=="
         },
         {
+            "name" : "Lion Cat",
+            "rarity" : 5,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAYAAACYTcH3AAAAAXNSR0IArs4c6QAAAjlJREFUWIW1lr1OAkEQx2cPQmOghVhK6IiPQOMjGHkDC67TwlgZQ2UosLsz0Scg4QEsbO4RzHUEOw20XGhIcC3OueztzX4dxz8xHntzO7+dmZ1dBpYa9Zscn8M4YTa2JjtZTsYi0HpXg3Zjb/zGBajuAuAiFSyPWpwNNiRgAUY0PgQEhXMEgTlABQsetTgAgO/z3MTUKlWr16UQoajokDAIQk1us0L5ewrICkZOjY1zW4mQVGHnBqoAYYNN9syjlhZIBmMyANbI/O1X6UTlSLYxAYVxwkb9JkcYL4wTJoaMKjzKiTxG2ejGAdJMiL49HBS3oxyVY0rMjCe+EIFEUaGWxygb3TilrOm1G3tY72r/QMXIiJPqQm/jPAgYWcieGKZ2Y2913vCoBdCdABtssj/oTpyiQHVpDyC/51Wpyqk7SaG+X3L/cbysPNdjXtb08ar0t3J0PMrI1M6fXz+cxqn5sRzWu1qWmayAsQHZ1MzN9UXmWH6G5bsVEEC+p4VxwrIUUZ1Y22+o+ljeGQF0xwF5ucJc+j5Xn08Wjk3CbODvOvVSDB+u5NDT21SHAIo7sHzXBSieWSY4nXPVDlbOuJh1+HS81d7mKEgbqWCUF/LecMUWsw4HAJiOt4X3eHxUKWVk5k+nhTifn6W7i4JT6fbhJPcbvzXe9HQgMpCNPr/yPfXy/kdbaGQHrkIyCEC6SN1CSRjTCo6lo0XGJZ2oUhHAXWYSlSpd1A9Khw6qN1w5z11JbYhQZSBQf98KOnqLMjhpAAAAAElFTkSuQmCC"
+        },
+        {
+            "name" : "Tiger Cat",
+            "rarity" : 4,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAe1JREFUSIm1Vq1ywkAQ/i7D0OBpUUUxfYBSV9En6Ew0togMLq4SicMxEdRWZ6ZPUIErfQAGlaoWfFPMVYRL9u42OSJYk73dve/bnzsO4Mwip5AA4CnlHAQUW2iLKUTdXsbGxnPJC9ZICE+pWMWrWDEF5JTJyATjAqnd5efEOzWY2hWZKaZd00mQ3aLHZam/jW1kl78kEx5jtEEarimO6kLruGAHLoZllnK9bOyn4pkZcFIF4gK3ZmTcpbxcszWuGTlihFwvZW1gQ9FOLUmkBZS9tlphEK82o0K/v3lliSgGnaFWUSUhIV1tRiWJ2boaHL11zAYVTHWXj8ER4shcSwYAUkrg86V03D5B5NudhGI4zi+sGI6tX2Faft3xpj5KSEmA42EwyGQd+CnCVmUa0giyP3dfRpeYXWIfrjQqL3B/DmRJiIvrOxcw0iiP53CL1u1mA+tA/H5vC/3v6wN+ECNLwsJmrju9AXYzAMfX+PJ5WxB6iqTbngAA6LfTG2jEWRLCD2KWxNzbbU+05D212B8W4L5phAK8Svwgxm420PYqXeEX75HKgmbGiaqqqhoTq6jIBOJITqlqf1iwBEoEwB8EoBxmGkFePYRcCPwgRhrBmqeJUfc/zpIsCdmEft7zavvzarxGRFWEfhA7cf4BEw8UIT9hDNcAAAAASUVORK5CYII="
+        },
+        {
+            "name" : "Super Cat",
+            "rarity" : 4,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAAAXNSR0IArs4c6QAAAZ1JREFUSIm1lT1LA0EQht891DaIoKnSiNeEgM2Jf0HE4koRrIXYW1lZ2VhdwFoQSwuR/IXDBRGCTcQmVRTEPs1ZJLPZXfcz5N4mt7Mz8+zMzW2AmtXpjisASOihDoCcm8mLQa/JlgXRbcxklIEhFZO/y9fr4NPzy5GyPtx7CgPpgbookezX4hwAMMoyK1S0aJRlSlUULO0bwbqfybfFOUtCg0NtNnsyO0EtI/4PpMvUplCbzc5mG5X84nwDESPKGz3eg14Tne44Gmhs3dXkwRrggrjijKDLtWMA09OT5GfbHsWZ5L1qKImpEtee5sdWnB6eJDHvSrmt6/jLoAtXgPppWrUbDeFguxwXgQhQP02VSmRgDFj//lqcu0EAcLJzCwB4+74wwmwf9e7mNe4/zsT6YDict45A5/uPStDvz5d4loFyUlnrG1vKuihzFbR9+m4dAhnmkg4hfd61GQAkLkiobBBgXoS4GV5Xb4y/ofLFM19FIa1zVQRM25dQD00qylyZoEUOU5Q5AMd4m0QjryvkMFEgHRgCsIJo7petP5L4x8t0W1VnAAAAAElFTkSuQmCC"
+        },
+        {
+            "name" : "Grumpy Cat",
+            "rarity" : 5,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAZ1JREFUSIm1lrFLw0AUxr8LmcRFnMRFIjhI5vo/iMFJROKSQHF3UsFJ0E1cRUgXi4iTxH/CzqGD0OAiTsWlhA5CHeyLl8vd5RLbb8q7vPd+9+VylwBz1unx4QQALLqYB4Dvzfjg6vqezQoijjHZIA9Mk7jSseN6TAXIQWJCO9yvnrKB7qLHQmzzgQkk6nSNQO3QLwALj8i0ianC4BfmuB6zxZvDr0xbvLy0YJwbdbo5zAaKbrZPbgAA3oaTF8RvKQDg9fasBN06ujTKt7RTmqFyEFlUSXRTR2kST0prRA3Jvgi5WG0BAM4/ekb5pBJIlxwGPpjr0SwB/L3uVY7ZtCjfsKpXPAx8OFMIiWCqWn45pEcNFfCJjuBEjHWS7iMRoHKQJnHJoU65o5fnh9KBuLm+aNxIJTpwbRUEAPqDUS1YfzAqxHytpYLUlQgRxypPhiwbI8vG2nsyCImMKPeRrOl/ZO3sHig/32srxvOoVAmS9J4ardn757d0nIxI3TSF8XJbe4Xe2r+epkARUglqApRBjEGmQBWkNkgF1AFIP6RDy3ppaXKuAAAAAElFTkSuQmCC"
+        },
+        {
+            "name" : "Music Cat",
+            "rarity" : 0,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAhCAYAAADOHBvaAAAAAXNSR0IArs4c6QAAAg1JREFUSInFlz9IQkEcx78nDkJDmxBkRn9oEQlqfdioS7xF3KKtNRx9jeoYrm3RJi7SoqPhWhDSEhhkBoFbQyERvJbuee/ud+fLf31BOH937/e57+/u3XuP4VfZbNbFAlSr1RgAsEVCRXhYN6NZSzYXWgSUyh3SDZy3WCwW80qwvneEdr00F9eW7bjPd1fef8WxZTsz3WiW7bhUTrLUs4Kb8ii7WrxILHuQyfDxQcYqazxPiWusdczVrpeUmGU7xjFyPyUGANy16PihUQUAfLtD5aIwiyCRyeGhUdX2A0Aik/PFueN+v8+UW2c/eeACwNPjqxHMZerf3Fn1xW87LY/nK7W4KRIbI9eUuGMdVHYLAOi0vKbx5EpkcgiziPKTQXIfCZU09sikkvCYqY+SWNGxu3pcsiDuKE38kHh7uZ/00unAK2u7swObnkyiQ96mYiaJ+X2gszTcm4j+1OHJRbdUTKfUsIRiE6N3Lg7lbRN8UqWGo2O12AQj11gcNC8ppZYHTOteNqGU2gS/RtlrL0c+jKD34ZLXPkSBhJJgALg8iZIP8vPeqRHKlY9XlNjxxcDH0oJliJis2xv4qpCPV9DtDbAVjxon2WkW9I6T6bL2tYXDZYgcM1WGw//tvVoBi+XQ6fNrMpiYm3RMwcU1Tm5H5W7fZKjNJecM9NWg2+U6yTuY0p8/V0yTCALk+gGZtdiZSw5MzAAAAABJRU5ErkJggg=="
+        },
+        {
+            "name" : "Money Cat",
+            "rarity" : 0,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABsAAAAnCAYAAAD+bDODAAAAAXNSR0IArs4c6QAAAjRJREFUWIW9lz9Iw0AUxr+rgjh2cxIKOnRwEcWlQqfgVBwUzOJQxFEXBQnqoFAEu7iKuGbWSbLqJrg4dLBQ0EWHUjdxqoPe9eXl7pJegx+E5t5d3u/enwupgF59g90mkbag4ODUCWSDZXp4WI27PFQrl9X9bauVeWM2mKiVyy61c4IZddtqOcGypCAtusxpzKsbjYqiSG22QAd5Q7hvQQ2e5wm4HWgOStg8zxPjbFH/b8KFIdKyJCjERcWH5MZ6lQyRuYIWTwa2x+Nfuw6o2pZHx1PJ66ADUSAwiPCvF/Str6uZzqYD2ewFwL1mMoKsdm1kutblNpki7pinkOpfu1EbWSkMjc557XqVSF1ybHp+5Mi4TG1vjIws0N7b5nqVSJtawHLOuCPD+844J4G9SqTOWSpsVBUfPCyeIA4DgPnTyRjwbOnGCdDtdmNj3/eTb5C1saPYonbzEO3modUxX8NBVDFYqVSKTV4tPyuHAPC2t6kuak8DhWHYB0gapYHqvF3H1v0cAGDi/TXh5HtqWt1/VlcTm6Xyfd/e+vsz17bphDqdjhEEDPHB87GxYx1T4EJxcElQDEaNXJ/VVQWQF7VTrc///m4fXAAAXu4aqjwJgKzdebsOINmhNnEQAFye7QIAZlcCoY1GnjdXkATwsfYb5OnoSwDAEwIAQKPRcH67UPBQf41sUBkZoE/j0DATNAgCQRuBKjWNaQqCwLhJXjOqXP9hyuhyTWNWIAUZWz8vIAUBwA/2XhBA8mdemAAAAABJRU5ErkJggg=="
+        },
+        {
+            "name" : "Boxer Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAY1JREFUSIm9Vj1uwjAYfYb2AJHSKQdgZKtET4AYitSpR8jSLSMSQqrUA8CQlSPA0LEjSGw9hJdikQNkcIfK0Yfz2fmlb3LsT+/Zfs92BCzswlDbfW0wV0rQb6FlqkUUCwA4BkEvIgaTLBMAoGWqB6bRtwjwN3EtUw0Ag77JXRiYbbs17roSTLKsaB+DgK0RUSwEKbryiBK4SOwars4EoljRz3BYDM6VYkm1TOks2dlPsgy7MCz1l8Lw/P3OEnQFmzo6c1cfV+PrLzyiN4JvVSKKnWQG+/GiaJsbgl0RLbTRRITCeWD348WV4bb53Jhvgt5zpGVakHAeucYaC1WR1BEwcG5dm5h7Q0Q/TPK6niXjFX2TroTOp7UOo/tOIhT0wi55pGQOAOgiaDgonGHgompvKVfz9Llk+UphOMxWSKZ88WaUQMkcSubYjBK2JpkucZit/EIPj2+9PYI217895SWPTCRfWv52bS8XsWX6G63o9euDbddBpSfn07r2ynwe1za/SrAqSI1TZgvWTeovGEmiAkeXlqwAAAAASUVORK5CYII="
+        },
+        {
+            "name" : "Cyber Cat",
+            "rarity" : 2,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAc9JREFUSImtlrFqwzAQhn+HLoFuGZo9eMgUaEcPhQ59A0PfodC54EIJxJA5kHcI9Rt0KHTI2CFTh9A9HbIFMrpLJS7nu7Ns51+iSGd9v07S2UCABtiVvE372qpnwdzvHsNogF3JgV0NiHBuwIKGGtim60pcTxrcYxiFTBhiYJuuSwkMABENcu24SHx/09RS4xKUzl0byOE3m98mXkz5tFNHTtKqvyZXZwG/TybRCdCt/vHlsu2Evn2/2ZhggKSdPFSyQD5eC7ZiHbgCrwNrk2pxPJaCAbLnHHxuLWeHSl/PAktpc33L2cFPqG0Fjc2KfmU8arNivgrrgHLwG67lPQfk+y4pLhJs07UZ46B5eqTPeeZFCEiSBZagUtrVFwtVXCRiWxvL06MHZ0UfWdE/6XMSXyBKqXVjqjk6VpfyRvAuckboYQP+97xy4oU72QWap0fERVK5WWqFk4pCF9HrGFzbu5rgNUCt7ZqBpia0osNru/q5JBnIXn9qwfl0FAQ24QDwcbvyBuaLca2BfDrC89O3/++ekcAqnEK55ouxaICDue4+HyqsoAongaz/oWoFp8C2YMDYcyn1bg8tSamXUm7CLdV9A2gH7CxwzUQo1OkPHKL+hw5pxFMAAAAASUVORK5CYII="
+        },
+        {
+            "name" : "King Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAAAXNSR0IArs4c6QAAAmpJREFUSInFVU1oGkEU/sYGIQGhgpRSaCDQsxloQ0/xUPcgHgo5GUvIzVsJlEok0HtsqRdzLL1IUfZQpPfdS3IqbXHXa4XePBRLhAVDAmF7qDvOzs7MCir9QFzfz/e99+btCExxeZT1EYOfH7d8/hMXz3MmVA4d0bjmKQuRcUWE+IBxzZOK6UQCn2w6a4zMlSd9fnPfB4Ds1rqUvP/rKtqVwAUARKw646Yw2pZXHXR0921K6VdxkG+ZjB+XuCjGNQ8EAFYpNq552BmNSGQZVoUEAOyMRmRVAgH3mujIuMsZobgMTGgRgXSzz54vj7JSPsIFhNacT+YJdCKq2HSzL18GWfK8NpU9Ma0g9oJcFNKOZGOa16ayk6nj/3T06eKOMkF1LnH5ESGdCKAeVxxPROhg9xYHu7cAwtWLneh8PEcA5Xskksg60fmEOBK5gkToSOYdI8B1NE1c+valm30CcGdUqVT8XqG+bB0GJvRyfx+dbhe9Qh3HV08XJu4V6uALZ6Nzbdu/KZXgtVqRpE63i3frX2OJ+fjy3h77flYskohQAK/VYoEigVhEYOOfU4eHLCZpmrOOGo2Gnzs9lVabNE38ub7WCj48K2JStcEXG+D85GT2x2dQis0XD0IBg/YQAGA5Dp5br5n9GADOPkQILcdBDsAjjmfQHsKgVH7XBQgSDEp1YQwGpSERnoMJWY6jFLsplTCp2lqRSdXG5pdXUp/lODMhg1IM2kM2LlmwDjq/QWl4vQFIDxP4txAb7/NKMtUiJE0TgHAFubbtW44TOhP+9/dyGQCQe/w7RHb+4x6edDqhWP55O58nfwEc0DvWrWjGwAAAAABJRU5ErkJggg=="
+        },
+        {
             "name" : "newcat",
             "rarity" : 0,
             "data" : "data"
@@ -134,6 +179,20 @@
                 ],
                 "chance" : 0.25,
                 "cat" : "Casual Cat"
+            },
+            {   
+                "urls" : [
+                    "music", "spotify", "soundcloud", "pandora"
+                ],
+                "chance" : 0.25,
+                "cat" : "Music Cat"
+            },
+            {   
+                "urls" : [
+                    "finance", "robinhood", "marketwatch", "nasdaq", "nyse", "etrade"
+                ],
+                "chance" : 0.25,
+                "cat" : "Money Cat"
             }
         ]
     }
