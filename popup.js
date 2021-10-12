@@ -217,7 +217,7 @@ function createNewVersionNotification() {
 }
 
 function openMysmPage() {
-    const url='BOO!'
+    const url='https://github.com/jamesweber7/Meow-you-see-me/';
     window.open(url, '_blank');
 }
 
