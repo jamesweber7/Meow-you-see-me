@@ -89,7 +89,7 @@
             "special_function" : {
                 "body" : "let t=document.getElementById('cat-btn');var e=document.body,n=document.documentElement,o=Math.max(e.scrollHeight,e.offsetHeight,n.clientHeight,n.scrollHeight,n.offsetHeight),r=Math.max(e.scrollWidth,e.offsetWidth,n.clientWidth,n.scrollWidth,n.offsetWidth),a=r-60,e=o-60;t.style.left='60px',t.style.top=e+'px';var n=o/(2*r*3),e=600*Math.cos(Math.atan(n)),i=Math.min(14,o/(n*r)),r=r/e*(i+1),e=0+r,l=a-60,s=l*n;let d=' @keyframes unicorn { ';for(let t=1;t<i+1;t++)percent=Math.round(100*t/i),d+=percent+'% { transform: translate('+(t%2==0?0:l)+'px, '+-t*s+'px) scale(100%); } ';d+='100% { transform: translate(0, -'+o+'px) scale(0%); } } ';let f=document.getElementById('cat-style');o='0 0 10px';f.innerText=f.innerText+'#cat-btn, #cat-btn:hover { animation: unicorn '+r+'s linear; animation-fill-mode: forwards; }#cat-btn img { animation: rainbow 1s infinite; }'+d+'@keyframes rainbow { 0% { filter: drop-shadow('+o+' red); } 20% { filter: drop-shadow('+o+' yellow); } 40% { filter: drop-shadow('+o+' green); } 60% { filter: drop-shadow('+o+' blue); } 80% { filter: drop-shadow('+o+' violet); } 100% { filter: drop-shadow('+o+' red); } }@keyframes launch {0% {transform: none;} 100% {transform:none;}}',setCatRemovalTimer(e)"
             },
-            "special_card" : ""
+            "special_card" : "catProfile.style = 'background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red); -webkit-background-clip: text; color: transparent;'"
         },
         {
             "name" : "Smart Cat",
