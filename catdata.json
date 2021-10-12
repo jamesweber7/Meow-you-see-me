@@ -24,7 +24,7 @@
         },
         { 
             "name" : "Dragon Cat",
-            "rarity" : 5,
+            "rarity" : 3,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAYAAABJ/8wUAAAAAXNSR0IArs4c6QAAAndJREFUWIXVVr9rFEEU/uaIukiyIDZescUZD8kGDhORkF5JsYWtlaUgZxNTWVhZR6tDSHlVWostQvIPBMGAkAsqZost1iYIawjRCGuxeevs7JuZ3btY+MEyP+7Nm2++997MARNi/lk3a2K/sD7H2rfqGk5KZmF9LjP5rhCps6gJAfJnGgPAVB0He2sHgnPyK/pdInW5k7sj+ybqCm5ynPA0hXw4wKLIuPjwfFT0F1/7tdawigBVVWTnpg3ITojcdZZlFVtVDUCTrCbntIFKjCOhzpugrZo6BC8StRThwlB3zjQv4/+qmqeDn3jbv1KMTTHnTq+u59Dygrb19KqTl55nbG3rZdD+gjpxmLC3p4rgzQ8bb4SrM1abvbUD4QXtzO1MI42O82R1O9PwgnZGpLg6v0jIJAitOExEGh2DJuuE6l+glKwyme7SbMX4y+5XhKszxvDYwsKpAWjukeUXd1knRO5VHBtb2V7+gPyQKgmWyPyj2wCA+49HbAvkJcqRkEuXU7S7NAuOBGC4R3aGPttO3RJY6adYRPW+oJB93rxTkN8Z+qUWQx/7m58qa4vqIMlIER2io0Os9FOjDRHRQSVSlK/JSCUBAFsDV2tj+s0ENjQymasPLmkXfzw9Rc9xSmPARXR0iM71m+waTo04TMRE/9B6jnO++d9xct4n9Qgn22dGX0Vo6GJTYXPQc5zi08Hmo0SkKbYGbkkNmmsCCgug5EgcJsUjKNf7yfYZmytqaIAqEVkNVXH5oa3kCP0ovzm6S4jIEBKNDRGQN1ahTVZ5kRe0s3Qj7994ck1LSsW3je9WAoSxnvt77/xCLbrc5Px4/3DU2O8fmxkvgCNCPQAAAAAASUVORK5CYII="
         },
         { 
@@ -34,7 +34,7 @@
         },
         { 
             "name" : "Pharoh Cat",
-            "rarity" : 5,
+            "rarity" : 3,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAllJREFUSIm9Vz1rG0EQfSvcqndpjCDC/glaiFoRpEJNuoClOoY0585FuqgxxLWcOo0KCaPWhlNtNw4SiJAyvTpj2BTHLLNzs6szXPyqvb29eW8+djQC3gi2M3Byz7w1cb6ae85G7BBHz65dz67dy+bEpdYpAXc329KeJ7edgbu72cJ2BqrRxXSI/njmP+yPZ1hMh8FaExZzqOQ5R4pMvt93VvM6Sr5zWcnAayDFxOCTT2EHgO6oBaBQTEZ2LttrrGkmAfHOZYHX3VErKDgDFAWlHawL3KmmmWCZtw0AHHDV3VEWzU8V5Ku5X9vOwK+lIy+bE3fw7pcx9NAfz9TQcoPSaOqcdpanZZm3TaNn146Kq2kmew1W3UvtA0WqfbXHPK8T8hY0UtdJC3HVPW2fEy+mQ5ieXTsSUGeFx8Dz3iBFWlOYfXqOGknlM/U9D73hPwj/O+cAfFEv87ZJ5pzAvZQep97tg7/ntBHLOxnWiiv1joO8XkyH8E0GKO4dAHz9fAoA+PL9Q2UPqoK6JzUZT05djgQcHbfw5/e2FiFX57e4vH4K9gJyEkDrh8cNjo6LFLxGxNX5LQAE4jkxhRwQM5wchSgF3JAmggjpLBd8ef0UzAUU8hI5EIY/JUBCkhKxBBGr5LzjkVIuAAA+vs+Db37eWzUyfBgBwpCr5CSAP+9cFoT24uxvcP7bj8MScb6aG+kIJwYiM5wcFLlRSaYRc1Dr1tp31HM+Fsu2y6OgkdKcxutHhjxKTgJovczbJjV/SxA5d0ISJ8npY16dVQTw6VQ6UEl5nUj9jfoHozKnTEqhF70AAAAASUVORK5CYII="        
         },
         { 
@@ -49,7 +49,7 @@
         },
         { 
             "name" : "Space Cat",
-            "rarity" : 5,
+            "rarity" : 3,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAYAAAD17ghaAAAAAXNSR0IArs4c6QAAAbhJREFUWIXtls9KAlEUh39G22iRi8DIbeTUQwhKtm0jtRN6AfeB0N4XENolbtpmjOBD1BhtFQUXtogeQFdHzj333rl3nMlNfiAyw73z+865d/4AO/4Ty3Z7Kc/tuQb8ZTgA7NsG5prNHD///vnlLXd5fqbMjStME+CTPq6ufTMVuOzF22vs2Jw8QbYyvFxrJZIY9tXxJCI7q+wBgoeXa611+M3do7cAnyevydE6wNsng1+eH7wFJNQRuT+MHcg6nF9PbmajQNbhcRiXIOmGS8Kw31KWwboE2yK1wGLcy15A3sO20MW4h3yxrhxnIuCCQvPFuvHYhqkwTYA2iKsLMswVbmNrm9D2INJuQwAIw1B7e93eP6UKJpxPwjAMl5UoAgDwf9eSSLqdBrqdBubTyfonwwHRAVPlnOOTU+VYPrBIcj6doBJFGATBuohBEKBarfoJ8El0IQAolUoAgO+fX6vkfDqJq0GTsH6QcBHJ0eFBjAAUaV6MCa0ltmWg6l2MRiMlmCAB2QHjXUDMZrONPlJJQuLcA1lKcAqFgjXHKZBWJC48kcAmIq7wjQR8RXzCUwnYRHyDd+wgVrbO2HAGTCYxAAAAAElFTkSuQmCC"
         },
         {
@@ -84,7 +84,7 @@
         },
         {
             "name" : "Unicorn Cat",
-            "rarity" : 5,
+            "rarity" : 1,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAAXNSR0IArs4c6QAAAbdJREFUSInFlr9OAzEMxr9U3WmHIgaE1I013hg73dh36MJjFB6AB+AxYOsTsDlrB6RKTIilZWE1Q5vj/ji5SwTHJ53aJrZ/Z1/OLpAoZpZUnyzJAsOAcjMa5UBmkL/NagaRGURyshqnGG/YpcYvlVQ6r6dr6m0rciyzERExxpguh/XXz2lbbhkAQERBPw8AAGOMGdeoEaAP7vVCNnhTVYj/bZqLTaC2H7KP2XYa/JaSTl1IF/dn5ff39adqEyxR1TkWoGmn2RpjjHq8Nee+a6H1ETDMM1Iz0srUdy20PtipUzN6Xa2CDuedPUT3/9+MvKp338wktqeps9X4IB/KbmyvBkntabkquzcAONceataGO3QKBDg9I2YWS8dhZp9Pn5ekwmNyztWuGrBr/vfNyjmHwhI2jlGQxR2AG3blcCxBlghYAO6BYd8I7uo46ObzOQBgMpm0gh8OBwDAbreL3gQRtZuqL50WtHlVVf0fUZBtTeAxERlmFsf1UV3Npo+WW0ZhCbh9BNAud+tV2+/3Wcc8VL7yGWmbubCqptNpLXa0eeQCm5BOUA5Qg/QG9QWGIMmgEDAG8PoGE/jnv+zJuioAAAAASUVORK5CYII=",
             "special_function" : {
                 "body" : "let t=document.getElementById('cat-btn');var e=document.body,n=document.documentElement,o=Math.max(e.scrollHeight,e.offsetHeight,n.clientHeight,n.scrollHeight,n.offsetHeight),r=Math.max(e.scrollWidth,e.offsetWidth,n.clientWidth,n.scrollWidth,n.offsetWidth),a=r-60,e=o-60;t.style.left='60px',t.style.top=e+'px';var n=o/(2*r*3),e=600*Math.cos(Math.atan(n)),i=Math.min(14,o/(n*r)),r=r/e*(i+1),e=0+r,l=a-60,s=l*n;let d=' @keyframes unicorn { ';for(let t=1;t<i+1;t++)percent=Math.round(100*t/i),d+=percent+'% { transform: translate('+(t%2==0?0:l)+'px, '+-t*s+'px) scale(100%); } ';d+='100% { transform: translate(0, -'+o+'px) scale(0%); } } ';let f=document.getElementById('cat-style');o='0 0 10px';f.innerText=f.innerText+'#cat-btn, #cat-btn:hover { animation: unicorn '+r+'s linear; animation-fill-mode: forwards; }#cat-btn img { animation: rainbow 1s infinite; }'+d+'@keyframes rainbow { 0% { filter: drop-shadow('+o+' red); } 20% { filter: drop-shadow('+o+' yellow); } 40% { filter: drop-shadow('+o+' green); } 60% { filter: drop-shadow('+o+' blue); } 80% { filter: drop-shadow('+o+' violet); } 100% { filter: drop-shadow('+o+' red); } }@keyframes launch {0% {transform: none;} 100% {transform:none;}}',setCatRemovalTimer(e)"
