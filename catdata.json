@@ -87,13 +87,13 @@
             "rarity" : 5000,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAAXNSR0IArs4c6QAAAbdJREFUSInFlr9OAzEMxr9U3WmHIgaE1I013hg73dh36MJjFB6AB+AxYOsTsDlrB6RKTIilZWE1Q5vj/ji5SwTHJ53aJrZ/Z1/OLpAoZpZUnyzJAsOAcjMa5UBmkL/NagaRGURyshqnGG/YpcYvlVQ6r6dr6m0rciyzERExxpguh/XXz2lbbhkAQERBPw8AAGOMGdeoEaAP7vVCNnhTVYj/bZqLTaC2H7KP2XYa/JaSTl1IF/dn5ff39adqEyxR1TkWoGmn2RpjjHq8Nee+a6H1ETDMM1Iz0srUdy20PtipUzN6Xa2CDuedPUT3/9+MvKp338wktqeps9X4IB/KbmyvBkntabkquzcAONceataGO3QKBDg9I2YWS8dhZp9Pn5ekwmNyztWuGrBr/vfNyjmHwhI2jlGQxR2AG3blcCxBlghYAO6BYd8I7uo46ObzOQBgMpm0gh8OBwDAbreL3gQRtZuqL50WtHlVVf0fUZBtTeAxERlmFsf1UV3Npo+WW0ZhCbh9BNAud+tV2+/3Wcc8VL7yGWmbubCqptNpLXa0eeQCm5BOUA5Qg/QG9QWGIMmgEDAG8PoGE/jnv+zJuioAAAAASUVORK5CYII=",
             "special_function" : {
-                "body" : "let t=document.getElementById('cat-btn');var e=document.body,n=document.documentElement,o=Math.max(e.scrollHeight,e.offsetHeight,n.clientHeight,n.scrollHeight,n.offsetHeight),r=Math.max(e.scrollWidth,e.offsetWidth,n.clientWidth,n.scrollWidth,n.offsetWidth),a=r-60,e=o-60;t.style.left='60px',t.style.top=e+'px';var n=o/(2*r*3),e=600*Math.cos(Math.atan(n)),i=Math.min(14,o/(n*r)),r=r/e*(i+1),e=0+r,l=a-60,s=l*n;let d=' @keyframes unicorn { ';for(let t=1;t<i+1;t++)percent=Math.round(100*t/i),d+=percent+'% { transform: translate('+(t%2==0?0:l)+'px, '+-t*s+'px) scale(100%); } ';d+='100% { transform: translate(0, -'+o+'px) scale(0%); } } ';let f=document.getElementById('cat-style');o='0 0 10px';f.innerText=f.innerText+'#cat-btn, #cat-btn:hover { animation: unicorn '+r+'s linear; animation-fill-mode: forwards; }#cat-btn img { animation: rainbow 1s infinite; }'+d+'@keyframes rainbow { 0% { filter: drop-shadow('+o+' red); } 20% { filter: drop-shadow('+o+' yellow); } 40% { filter: drop-shadow('+o+' green); } 60% { filter: drop-shadow('+o+' blue); } 80% { filter: drop-shadow('+o+' violet); } 100% { filter: drop-shadow('+o+' red); } }@keyframes launch {0% {transform: none;} 100% {transform:none;}}',setCatRemovalTimer(e)"
+                "body" : ""
             }
         },
         {
             "name" : "Smart Cat",
             "rarity" : 0,
-            "data" : ""
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAYAAAC5UQwxAAAAAXNSR0IArs4c6QAAAf5JREFUSIm9VrtKA0EUPRMULNMZUmhjm0JXFi0SyH5ABBVtLAQDNtpZ+QH+QGwEBQsrIaA/EEGLiAQsLK20CD6aLRebsVhnc+fuzGY2UQ+EncfZe+65c2cJ8E/o3L5JACjwhb8QorGFSTColQR/cVQxvmYUNAn/VgU0JzxoUCulXujcvqXWTDwb1yqogkg5yEEIQblWHuWaRHlWEoCMY8RoeJ5seF4yV/uuPNo4puaQNOOVxUVt87rXS7mVUjrxAIgCnf1kkl0Cne/MU9yCjaQyU5nSMcs6Fy9X09AgWU1jaq6hgjQYBw/ien2GCmYhqJWcz5BCO0PbJ406UGNeUj62ISVgc8mFXPcYL91Gq96cbPeecXP3PjTbvAhqJf0ernpzsjz5BQCoV6d/XQwgJaViANDqviTjcd3S3hAmMQolnEf086OfjDfXF7RjK2SJAcD+8iyAuMT16rQWjIuoXxbE3tKM891Tbi/bj0587i63oKtoGIbafLcZJMLWj7cNqsQba/NWMT+Ky+pHffhRHyenHf1PFHW5s3WEh6ky/KifPM8uDlOBW92XlEvujGO3GcT38Pj+VQBApXmOh6kyAGjPSvPc6pRDuaMOKSbUwBR0FKiq2DBh3RmC6sFVaq1YLCIMw6Q6FKpxRhI0iQHma8ChEWg3UTydbgMYnPU4+AZLsEFw00vBKwAAAABJRU5ErkJggg=="
         },
         {
             "name" : "newcat",
