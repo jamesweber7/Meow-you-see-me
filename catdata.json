@@ -140,11 +140,6 @@
             "name" : "King Cat",
             "rarity" : 3,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAhCAYAAADH97ugAAAAAXNSR0IArs4c6QAAAmpJREFUSInFVU1oGkEU/sYGIQGhgpRSaCDQsxloQ0/xUPcgHgo5GUvIzVsJlEok0HtsqRdzLL1IUfZQpPfdS3IqbXHXa4XePBRLhAVDAmF7qDvOzs7MCir9QFzfz/e99+btCExxeZT1EYOfH7d8/hMXz3MmVA4d0bjmKQuRcUWE+IBxzZOK6UQCn2w6a4zMlSd9fnPfB4Ds1rqUvP/rKtqVwAUARKw646Yw2pZXHXR0921K6VdxkG+ZjB+XuCjGNQ8EAFYpNq552BmNSGQZVoUEAOyMRmRVAgH3mujIuMsZobgMTGgRgXSzz54vj7JSPsIFhNacT+YJdCKq2HSzL18GWfK8NpU9Ma0g9oJcFNKOZGOa16ayk6nj/3T06eKOMkF1LnH5ESGdCKAeVxxPROhg9xYHu7cAwtWLneh8PEcA5Xskksg60fmEOBK5gkToSOYdI8B1NE1c+valm30CcGdUqVT8XqG+bB0GJvRyfx+dbhe9Qh3HV08XJu4V6uALZ6Nzbdu/KZXgtVqRpE63i3frX2OJ+fjy3h77flYskohQAK/VYoEigVhEYOOfU4eHLCZpmrOOGo2Gnzs9lVabNE38ub7WCj48K2JStcEXG+D85GT2x2dQis0XD0IBg/YQAGA5Dp5br5n9GADOPkQILcdBDsAjjmfQHsKgVH7XBQgSDEp1YQwGpSERnoMJWY6jFLsplTCp2lqRSdXG5pdXUp/lODMhg1IM2kM2LlmwDjq/QWl4vQFIDxP4txAb7/NKMtUiJE0TgHAFubbtW44TOhP+9/dyGQCQe/w7RHb+4x6edDqhWP55O58nfwEc0DvWrWjGwAAAAABJRU5ErkJggg=="
-        },
-        {
-            "name" : "newcat",
-            "rarity" : 0,
-            "data" : "data"
         }
     ],
     "special" : {

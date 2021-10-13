@@ -282,10 +282,16 @@ function updateCats(cats) {
     function getCats(gitdata) {
         let ratio = cats.length === gitdata.cats.length ? 'All' : cats.length + '/' + gitdata.cats.length;
         addCollectedCatsHeader(ratio);
-        for (let i = 0; i < gitdata.cats.length; i++) {
-            if (cats.includes(gitdata.cats[i].name)) {
-                addCatProfile(gitdata.cats[i]);
-            }
+        for (let i = 0; i < cats.length; i++) {
+            addCatProfile(findCat(gitdata.cats, cats[i]))
+        }
+    }
+}
+
+function findCat(cats, catName) {
+    for (let i = 0; i < cats.length; i++) {
+        if (cats[i].name === catName) {
+        return cats[i];
         }
     }
 }
@@ -299,6 +305,7 @@ function addCollectedCatsHeader(ratio) {
 function addCatProfile(cat) {
     let catProfile = document.createElement('catprofile');
     catProfile.innerText = cat.name;
+    addRearrangeFunctionality(catProfile);
     let img = document.createElement('img');
     img.setAttribute('src', "data:image/png;base64," + cat.data);
     img.className='special-cat-img';
@@ -306,6 +313,58 @@ function addCatProfile(cat) {
     document.getElementById('litter-box').append(catProfile);
     if (cat.special_card) {
         new Function(["catProfile"], cat.special_card)(catProfile);
+    }
+}
+
+var draggedProfile = null;
+function addRearrangeFunctionality(catProfile) {
+
+    catProfile.setAttribute('draggable', true);
+
+    catProfile.addEventListener('dragenter', catDragEnter, false);
+    catProfile.addEventListener('dragstart', catDragStart, false);
+    catProfile.addEventListener('dragend', catDragEnd, false);
+
+    function catDragStart() {
+        draggedProfile = catProfile;
+    }
+
+    function catDragEnter() {
+        if (!draggedProfile) {
+            return;
+        }
+
+        let profiles = [...document.getElementsByTagName('catprofile')];
+        if (profiles.indexOf(draggedProfile) < profiles.indexOf(catProfile)) {
+            catProfile.after(draggedProfile);
+        } else {
+            catProfile.before(draggedProfile);
+        }
+    }
+
+    function catDragEnd() {
+        if (!draggedProfile) {
+            return;
+        }
+
+        saveArrangement();
+        setTimeout(setDraggedNull, 0.05);
+
+        function setDraggedNull() {
+            draggedProfile = null;
+        }
+        function saveArrangement() {
+            let profiles = [...document.getElementsByTagName('catprofile')];
+            let cats = [];
+            for (let i = 0; i < profiles.length; i++) {
+                cats.push(profiles[i].innerText);
+            }
+            chrome.storage.sync.get(['catdata'], (data) => {
+                data.catdata.stats.cats = cats;
+                chrome.storage.sync.set(data);
+            });
+        }
+
     }
 }
 
@@ -329,4 +388,4 @@ function simplifyUrl(url) {
     url = url.toLowerCase();
     
     return url;
-  }
+}

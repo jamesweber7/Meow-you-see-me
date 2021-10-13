@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(receivedMessage);
 
 function loadGitCatData(callback) {
   var xhr = new XMLHttpRequest();
-  var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
+    var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
   xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           var gitdata = JSON.parse(this.responseText);
@@ -19,7 +19,8 @@ function loadGitCatData(callback) {
 function loadChromeCatData(gitdata) {
   chrome.storage.sync.get(['catdata'], (data) => {
     if (!Object.keys(data).length) {
-      return createCatdata();
+      createCatdata();
+      return loadChromeCatData(gitdata);
     }
     else if (isAllowedToHide(data)) {
       processCat(gitdata, data.catdata.stats);
