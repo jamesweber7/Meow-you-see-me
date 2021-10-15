@@ -41,7 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
         function toggleOnOff() {
             let onText = document.getElementById('on-off');
             onText.innerText = onText.innerText === 'On' ? 'Off' : 'On';
-            onText.innerText === 'Off' && sendMessageToTab({title: 'OFF'});
+            onText.innerText === 'Off' && removeAllCatButtons();
+        }
+        function removeAllCatButtons() {
+            chrome.tabs.query({}, sendMessages);
+            function sendMessages (tabs) {
+                tabs.forEach( (tab) => { 
+                    chrome.tabs.sendMessage(tab.id, {title:'OFF'}); 
+                } );
+            }
         }
     }
 
@@ -94,17 +102,33 @@ function processGitCatData(gitdata) {
     processVersion(gitdata.version);
 }
 
-function loadGitCatData(callback) {
+function loadGitCatData(callback, attempts) {
     var xhr = new XMLHttpRequest();
     var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
     xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var gitdata = JSON.parse(this.responseText);
-            callback(gitdata);
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                var gitdata = JSON.parse(this.responseText);
+                callback(gitdata);
+            } else {
+                const MAX_ATTEMPTS = 5;
+                attempts = attempts ? attempts - 1 : MAX_ATTEMPTS;
+                if (attempts > 0) {
+                    return loadGitCatData(callback, attempts);
+                } else {
+                    return alertFailedConnection();
+                }
+            }
         }
+
     };
     xhr.open("GET", url, true);
     xhr.send();
+}
+
+function alertFailedConnection() {
+    document.getElementById('cata-data').innerText = "Uh Oh, Poor Connection\n" +
+    "we couldn't connect to the catabase";
 }
 
 function sendMessageToTab(message) {
@@ -261,6 +285,8 @@ function updateOn(on) {
     let btn = document.getElementById('on');
     if (on) {
         btn.className = 'checked';
+    } else {
+        document.getElementById('on-off').innerText = 'Off';
     }
     btn.addEventListener('click', toggleOn);
     function toggleOn() {
@@ -278,6 +304,8 @@ function updateTotal(total) {
 function updateCats(cats) {
     if (cats.length) {
         loadGitCatData(getCats);
+    } else {
+        noCatsYetMessage();
     }
     function getCats(gitdata) {
         let ratio = cats.length === gitdata.cats.length ? 'All' : cats.length + '/' + gitdata.cats.length;
@@ -285,6 +313,9 @@ function updateCats(cats) {
         for (let i = 0; i < cats.length; i++) {
             addCatProfile(findCat(gitdata.cats, cats[i]))
         }
+    }
+    function noCatsYetMessage() {
+        document.getElementById('cata-data').innerText = 'No special cats collected yet';
     }
 }
 
@@ -297,12 +328,14 @@ function findCat(cats, catName) {
 }
 
 function addCollectedCatsHeader(ratio) {
-    let collectedCatsHeader = document.createElement('collectionheader');
+    let collectedCatsHeader = document.getElementById('cata-data');
     collectedCatsHeader.innerText = ratio + ' Special Cats Collected';
-    document.getElementById('litter-box').append(collectedCatsHeader);
 }
 
 function addCatProfile(cat) {
+    if (!cat) {
+        return;
+    }
     let catProfile = document.createElement('catprofile');
     catProfile.innerText = cat.name;
     addRearrangeFunctionality(catProfile);

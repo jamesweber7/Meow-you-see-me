@@ -5,7 +5,7 @@ chrome.runtime.onMessage.addListener(receivedMessage);
 
 function loadGitCatData(callback) {
   var xhr = new XMLHttpRequest();
-    var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
+  var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
   xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           var gitdata = JSON.parse(this.responseText);
@@ -35,6 +35,7 @@ function processCat(gitdata, stats) {
   
   let cat = getCat(gitdata, stats);
   addCatButton(cat.data);
+
   if (cat.special_function) {
     new Function(["gitdata", "stats"], cat.special_function.body)(gitdata, stats);
   }
@@ -238,14 +239,18 @@ function unmuteMeow() {
 
 function addCatButton(image) {
   
-  var body = document.body;
-  var html = document.documentElement;
-  var head = document.head;
+  let body = document.body;
+  let html = document.documentElement;
+  let head = document.head;
 
-  var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-  var width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
-  let left = Math.floor(Math.random()*width) + 'px';
-  let top = Math.floor(Math.random()*height) + 'px';
+  let height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+  let width = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+  let cushion = 50;
+  let catSize = 32;
+  let rangeWidth = width - 2*cushion;
+  let rangeHeight = height - 2*cushion;
+  let left = Math.floor(Math.random()*rangeWidth + cushion - catSize*0.5) + 'px';
+  let top = Math.floor(Math.random()*rangeHeight + cushion - catSize*0.5) + 'px';
 
   let style = document.createElement('style');
 
@@ -266,12 +271,16 @@ function addCatButton(image) {
     'cursor: pointer;' + 
     'z-index: 10000;' + 
     'position: absolute;' + 
+    'width: auto;' + 
+    'margin: 0;' +
+    'padding: 0;' +
     'left: ' + left + ';' + 
     'top: ' + top + ';'
   );
     
   let img = document.createElement('img');
   img.setAttribute('src', "data:image/png;base64," + image);
+  img.style='width: auto; margin: 0; padding: 0;';
   btn.append(img);
   body.append(btn);
 
@@ -358,7 +367,8 @@ function notifySpecialCatch(cat) {
 }
 
 function isSpecialRandomCat() {
-  let percentChanceOfSpecial = 25;
+  // let percentChanceOfSpecial = 25;
+  let percentChanceOfSpecial = 100;
   return Math.random() < (percentChanceOfSpecial / 100);
 }
 

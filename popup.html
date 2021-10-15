@@ -6,8 +6,9 @@
     <header>
         <nobr><img src='cat_32.png' ></img>Meow You See Me<img src='cat_32.png' ></img></nobr>
     </header>
-    <box style='width: 222px; vertical-align: top; padding:8px;' id='litter-box'>
+    <box style='width: 222px; vertical-align: top; padding:8px;' id='label-box'>
         You've found <silentvar id='total'>no</silentvar> cats!
+        <collectionheader id='cata-data'>Loading Cats...</collectionheader>
     </box>
     <box style='width: 110px;' id='settings-box'>
         <checkrow>
@@ -17,6 +18,7 @@
             Volume <checkbox id='volume' class='unchecked'></checkbox>
         </checkrow>
     </box>
+    <box style='vertical-align: top; padding:8px;' id='litter-box'></box>
     <footer id='paws'>
         <button id='blocked-btn'>Blocked Sites</button>
         <box class='invisible' style='margin-top:6px;' id='site-blocker'>

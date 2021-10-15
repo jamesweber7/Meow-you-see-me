@@ -156,6 +156,10 @@ catprofile {
     width: 110px;
 }
 
+catprofile img {
+    filter: drop-shadow(0 0 3px black);
+}
+
 .special-cat-img {
     display: block;
     margin-left: auto;
