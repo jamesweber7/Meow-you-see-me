@@ -367,8 +367,7 @@ function notifySpecialCatch(cat) {
 }
 
 function isSpecialRandomCat() {
-  // let percentChanceOfSpecial = 25;
-  let percentChanceOfSpecial = 100;
+  let percentChanceOfSpecial = 25;
   return Math.random() < (percentChanceOfSpecial / 100);
 }
 
