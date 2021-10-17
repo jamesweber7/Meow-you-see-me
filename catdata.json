@@ -33,7 +33,7 @@
             "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAXVJREFUSIm9ljFugzAUhn+jCLGwsViZ3HMUzpMbdEjGMPQGPQ/0HPVUT9lYsBjo0BgZ/GwcUvpLCPOw/8/v8UAAO0sIMQJAYgZ7AGzvg02VUrKY3VGy11LzGBVcW/SopJSM/ZXZGujwjMHX55sTe3l9J+eSJaIMQmLH0zQevz8c4FQ6G2Qg9mLbIATxwaSULLEhocWxMV88IWfuIBJElSk2RsWFECPZ3mvNwI4nL8Ro2X1R75GUEkKI2ZiKBTcXAzJm97nBWBAUC9uqqb3/Q9MnqO9752aWZU8DzAc6AQDO+XipKgCAfabgIWmtZ4ctxjkPPpvYrLTWOJcl6rbFuSwBAHXbQinFZiCTybVpcKkqXJsGADAMAwAgz3PHvOs6AECapsFNKKXcZjBAynR52DJZmLF9Ddzb21c+k82aTEZL87ptAfxm5PwjFEWx6X3ylW96RtTNrTBbt9tt5h3869kKXEJWQVuAFCQaFAv0QR4G+YAhgNEPkeTNeLQNRx4AAAAASUVORK5CYII="        
         },
         { 
-            "name" : "Pharoh Cat",
+            "name" : "Pharaoh Cat",
             "rarity" : 3,
             "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAllJREFUSIm9Vz1rG0EQfSvcqndpjCDC/glaiFoRpEJNuoClOoY0585FuqgxxLWcOo0KCaPWhlNtNw4SiJAyvTpj2BTHLLNzs6szXPyqvb29eW8+djQC3gi2M3Byz7w1cb6ae85G7BBHz65dz67dy+bEpdYpAXc329KeJ7edgbu72cJ2BqrRxXSI/njmP+yPZ1hMh8FaExZzqOQ5R4pMvt93VvM6Sr5zWcnAayDFxOCTT2EHgO6oBaBQTEZ2LttrrGkmAfHOZYHX3VErKDgDFAWlHawL3KmmmWCZtw0AHHDV3VEWzU8V5Ku5X9vOwK+lIy+bE3fw7pcx9NAfz9TQcoPSaOqcdpanZZm3TaNn146Kq2kmew1W3UvtA0WqfbXHPK8T8hY0UtdJC3HVPW2fEy+mQ5ieXTsSUGeFx8Dz3iBFWlOYfXqOGknlM/U9D73hPwj/O+cAfFEv87ZJ5pzAvZQep97tg7/ntBHLOxnWiiv1joO8XkyH8E0GKO4dAHz9fAoA+PL9Q2UPqoK6JzUZT05djgQcHbfw5/e2FiFX57e4vH4K9gJyEkDrh8cNjo6LFLxGxNX5LQAE4jkxhRwQM5wchSgF3JAmggjpLBd8ef0UzAUU8hI5EIY/JUBCkhKxBBGr5LzjkVIuAAA+vs+Db37eWzUyfBgBwpCr5CSAP+9cFoT24uxvcP7bj8MScb6aG+kIJwYiM5wcFLlRSaYRc1Dr1tp31HM+Fsu2y6OgkdKcxutHhjxKTgJovczbJjV/SxA5d0ISJ8npY16dVQTw6VQ6UEl5nUj9jfoHozKnTEqhF70AAAAASUVORK5CYII="        
         },
@@ -163,6 +163,24 @@
             "special_function" : {
                 "body" : "let style=document.getElementById('cat-style');style.innerText=style.innerText+'#cat-btn, #cat-btn:hover { animation: teleport 3s infinite; } @keyframes teleport { 0% { transform: scale(0%) rotate(180deg); } 10% { transform: scale(100%) rotate(0deg); } 90% { transform: scale(100%) rotate(0deg); } 100% { transform: scale(0%) rotate(180deg); } }';let btn=document.getElementById('cat-btn');btn.addEventListener('animationiteration',relocate);var body=document.body,html=document.documentElement,height=Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight),width=Math.max(body.scrollWidth,body.offsetWidth,html.clientWidth,html.scrollWidth,html.offsetWidth);function relocate(){btn.style.left=Math.floor(Math.random()*width)+'px',btn.style.top=Math.floor(Math.random()*height)+'px'}"
             }
+        },
+        {
+            "name" : "Zombie Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAYJJREFUSIm1lr9OwzAQxj+nSCwsSM3WmYqtUt4g4gmCxBuwILF24AEYsrZi6cgGIk/Q9g0iZUMwp1OQWFgYkJmu2PHZjkn6Tc757n53/qcAB9ZsO5cAENHgEAA1t1A/qjQXQ0HaNsEZVaA63xQldsuNtRjX6gifg6qmKFHH15pt0qwAAHGWOGOjLgBSnCX7xASJswS75QZVmqNKc2ssu0QAjKDZdg7gryuCcMnJV8kl2I64YLJRVzaILT7iuvHJtx+c2I7arYfYbPagU9dHbEfPj401wHWyXPEH76gpSgCee6RW3+7ENUeApihRL9aoF2v7PWon4TbYNkcAkhCCv0eqpJTO0yWlWV+cJZjcXmg27YEceq/UR1jr6Pvza0iOdrGP2pMEOz496QVpF22AbI4+sG81DNDP28d+PJqOOyey5SBFLgcuIBRydn8lDVDX6v7j6wWpy9dHGuj97kmo41DIaDo2CqOcnX6vzl9uOl/k18sHNmfQf5wPaIMEg2xAF4D0C0PoxzHQ1Km1AAAAAElFTkSuQmCC"
+        },
+        {
+            "name" : "Scaredy Cat",
+            "rarity" : 2,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAAAAXNSR0IArs4c6QAAAXpJREFUSIm9VTFSw0AM3MtQMsykpWCGOgUfSZE8IV+gTeHhA3zBX/AX8gSK1AwUaa9JfxSxQSfv6YQd2BkX1mm1OlmSgX9CF5ukbQvrkCD1j/usi00qxQ5MfLN8CcpPk/U59WGiMjYVF47ZexcbojkKnMXRHCquE5DCNdFCIpQvxW9K5GsKljD6drr83tJrP+are2nodtqNLKDXZtmleEJfAee4XQ0L65CV2Guz7OgrbYoDAD5S/nj9iK+obACQTPHV82fxrPY9a3zgcnO2rQAAx9eHItEzShYfMObcwtwF1CNko0Z2uinM3itcOuejnVzDjBtj0JJlD8AlO2vepehvEmBVpd0eT2/uoBMRAKPhvhO4nadiXaTa7e15mxvuntz+8WzHNsVP7xEAcP+4/AlYuEmLLbVPEh+ES0lYkFyLRxtOk2t2ec58Srz6j+UPQcX360PYrw+jufSW3YvqOpVojxvXFpRlZpeYJO5NYrfqXHEniZeS8IoO+AJdVsC/YxqGcAAAAABJRU5ErkJggg==",
+            "special_function" : {
+                "body" : "let btn=document.getElementById('cat-btn');btn.style.animation='shake 0.1s infinite';let mouseArea=document.createElement('div'),img=[...btn.getElementsByTagName('img')][0],style=document.getElementById('cat-style'),left=btn.style.left;btn.style.left=Number.parseInt(left.substr(0,left.indexOf('px')))-75+'px';let top=btn.style.top;function actScared(t){let e=btn.style.left;e=e.substr(0,e.indexOf('px'));let n=btn.style.top;n=n.substr(0,n.indexOf('px'));var a=Number.parseInt(e)+75,s=Number.parseInt(n)+75,r=t.pageX,t=t.pageY;let i=Math.atan((s-t)/(a-r));a<r&&(i-=Math.PI);btn.style.animation='scaredyrun 3s forwards',style.innerText+='@keyframes scaredyrun {0%{transform:translate(0,0);}90%{transform:translate('+810*Math.cos(i)+'px,'+810*Math.sin(i)+'px) scale(100%);}100%{transform:translate('+900*Math.cos(i)+'px,'+900*Math.sin(i)+'px) scale(0%);}}',btn.addEventListener('animationend',removeCatButton),btn.addEventListener('click',removeCatButton)}btn.style.top=Number.parseInt(top.substr(0,top.indexOf('px')))-75+'px',mouseArea.style='width:150px;height:150px;border-radius:50%;display:flex;justify-content:center;align-items:center;',img.style='width:initial;margin:auto;',btn.append(mouseArea),mouseArea.append(img),style.innerText+='#cat-btn:hover{animation:none;} @keyframes shake {0%,100%{transform:rotate(-10deg);}50%{transform:rotate(10deg);}}',btn.addEventListener('mouseenter',actScared,{once:!0});"   
+            }
+        },
+        {
+            "name" : "Cyborg Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAAAXNSR0IArs4c6QAAAc1JREFUSIm9V7GKwjAY/ir3AnJDwC2rAZ/AVRwKd4NThz7DdfUJXHtrVwcnhzso5RB8iEJcHQQhg/gIvSklbf80LVU/KInNl+/Ln/9vWj30wG4yKXQ/uF69PnNHfcgvxfF4LNysJl4W0dONpJQFAIx0pwv0tnXZPillYWp75g8hhLWSdrtdQzwIApJPLd6jbpqGXSLW/Dauk9AFeZ6X/dlsRnIGF0Oe51BKlZdp2jCiciOEqFxtJgAQ/X4BAGkmhPDIiCjh+j3KpM1sBAzPUfzxXWkpWIuhHoGUsjHZjMoEY6xSFEIIb3DVUcmnKo80OhwOWCwWpLAQgozONf8hz1EXtD5HZp7qOWsbo+A8arQItV1tYzWe9+ZaSZuIy8BE5UR4Rq70qVPJ0f1+f7RPicbWabPxeDxIuL5oa47qRJexazcqRufzuTLIOe8sZNPQKIthu91aC4FzjjRNWw2m06l1LAxDd3kDQJqmYIx1oVrR7w2bZbgtfdyWPpIkKdteRmEYNt6ynPNKnjT2q0+s9j9lCwCn04nkat1OH+rr9bpgjAFZhuRyKcU13v9SKKXg+z7m8zmp2esfQRzH1oJRSmGz2Vj1ehnZDKMocur8A2up8WUdnPhIAAAAAElFTkSuQmCC"
         }
     ],
     "special" : {
