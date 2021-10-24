@@ -60,7 +60,7 @@
         {
             "name" : "Shark Cat",
             "rarity" : 5,
-            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAAAXNSR0IArs4c6QAAASRJREFUSIm9VttxwzAMA33ZhVzBAzVDdSGvQH8lA7QzsB89+ViF1CN1gh/raEAQaUoyMIlt22xWAwDLM6JnQDNkn826rlPat2X0ciNVNQBYyqCHugl6TaGq5udeouB/Uc+lqkaRgYhQJopQ+C1ul3AWLmdMIiLHWFVDTloiL25NUPMirohQ2N6ReDSWxY+uCxUnIswoKlOJMTOYOeVl8amuKwYF+76PyABMdB0zg4hg9rsmPx4xHMqoziRDy7B5qPrv8X2/40oUPiN+aOSPHC8quFL76qnf14YiQg8bNltRy+zT2r1EVImtg6/bzT6AP88eQmdV7QpncWRVl85jtNtGSnbp3UcFaRkcWu39sGEjk3p1EXp7ceqXaQRZhU43igxFhH4A8RRAJQwLA6oAAAAASUVORK5CYII="
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAAAXNSR0IArs4c6QAAATdJREFUSIm9VslxxDAMAz3bQRpYv8gWXFC2h60gPaQht0C/vAUkNSiPjDyUQl0bJ/hYwwEIkwMfwCDWdQ2jGgCYnhE9Axoh22mWZRnS/ttEf26kqgEApnhoIQ9BKxSqGmzvySv+FnkvVQ3kGYgIlUQeIr/GbRLOwuWMJiJynFXV5RRXZMW1BjnP44oIufH2xL21Uv1Inas4Ee5E3ppijZnBzEVeqT6UumgQsW1bjwzAQOqYGUSEEL7vyZ57DLsmyicpoWZYncgafD4eAID7PB+1t30HALxcrwnfM5yA9JXjmdyIEgOL+zzjRqncBib2//HAltaUN7N4D/UsEWXi0MArED72Pbm24DqralM4imOqfHUWvWnrWdml9T2KKK7BYCjenkl+dx5az+LQL1MPShs63cgzFBH6Ag4/Ow0rRn0OAAAAAElFTkSuQmCC"
         },
         {
             "name" : "Hundred Cat",
@@ -85,7 +85,7 @@
         {
             "name" : "Unicorn Cat",
             "rarity" : 1,
-            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAAXNSR0IArs4c6QAAAbdJREFUSInFlr9OAzEMxr9U3WmHIgaE1I013hg73dh36MJjFB6AB+AxYOsTsDlrB6RKTIilZWE1Q5vj/ji5SwTHJ53aJrZ/Z1/OLpAoZpZUnyzJAsOAcjMa5UBmkL/NagaRGURyshqnGG/YpcYvlVQ6r6dr6m0rciyzERExxpguh/XXz2lbbhkAQERBPw8AAGOMGdeoEaAP7vVCNnhTVYj/bZqLTaC2H7KP2XYa/JaSTl1IF/dn5ff39adqEyxR1TkWoGmn2RpjjHq8Nee+a6H1ETDMM1Iz0srUdy20PtipUzN6Xa2CDuedPUT3/9+MvKp338wktqeps9X4IB/KbmyvBkntabkquzcAONceataGO3QKBDg9I2YWS8dhZp9Pn5ekwmNyztWuGrBr/vfNyjmHwhI2jlGQxR2AG3blcCxBlghYAO6BYd8I7uo46ObzOQBgMpm0gh8OBwDAbreL3gQRtZuqL50WtHlVVf0fUZBtTeAxERlmFsf1UV3Npo+WW0ZhCbh9BNAud+tV2+/3Wcc8VL7yGWmbubCqptNpLXa0eeQCm5BOUA5Qg/QG9QWGIMmgEDAG8PoGE/jnv+zJuioAAAAASUVORK5CYII=",
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABoAAAAiCAYAAABBY8kOAAAAAXNSR0IArs4c6QAAAcNJREFUSInFlK9PQzEQx7/3NoEh2QyZICQzBNtzCARqcoNkCXqGPwP+AYJGoWFqOOSCwLWWEJIlSMxmUUWwvr0fbdc2Y3yTl/dee3ef3rU9IFLTq6GO9QGALMVpK6Bb3v170GAy0gBwMZhEl68ZY7xz34+Nnytpj86y72ifqIxSAFprTUSUaa2D6v1w/pjbdRpjTIf+Y66XMv9NMwgAREQux05jHLKeHFL9J1tGRWBIxsbeZ7vWYFOKOgwunbyvvl8O7TbOEhWdfQGqdjZbIiLrPbI5h465xjNgO3tkzchWptAx1/jWTp01o4/RyOmw57zSfv//zciouPpqJr45m9a2GhPkyzLrmytBYntaqoiI8haklKoZCCE2AgGWeySl1IL5N/jT8r3PVrhPSqnSUwJKKb0lC81KKYWeYDwriR4LXAM4lgrMTCWQYAZOAXUjIT4Z6kACALrdLgCg1WrVgi8WCwDAbDbzLoKZ603VlM4WtPoUNTla+fVY4JXLlWgyM0kptZKyFtxkE6L+m0RPMHB5B6Be7tpVm8/nScfcVb58j2yTqbCi2u12Kba3eaQCq5C1oBSgDRIMCgW6INEgF9AHMPoBKErVaNuoWycAAAAASUVORK5CYII=",
             "special_function" : {
                 "body" : "let t=document.getElementById('cat-btn');var e=document.body,n=document.documentElement,o=Math.max(e.scrollHeight,e.offsetHeight,n.clientHeight,n.scrollHeight,n.offsetHeight),r=Math.max(e.scrollWidth,e.offsetWidth,n.clientWidth,n.scrollWidth,n.offsetWidth),a=r-60,e=o-60;t.style.left='60px',t.style.top=e+'px';var n=o/(2*r*3),e=600*Math.cos(Math.atan(n)),i=Math.min(14,o/(n*r)),r=r/e*(i+1),e=0+r,l=a-60,s=l*n;let d=' @keyframes unicorn { ';for(let t=1;t<i+1;t++)percent=Math.round(100*t/i),d+=percent+'% { transform: translate('+(t%2==0?0:l)+'px, '+-t*s+'px) scale(100%); } ';d+='100% { transform: translate(0, -'+o+'px) scale(0%); } } ';let f=document.getElementById('cat-style');o='0 0 10px';f.innerText=f.innerText+'#cat-btn, #cat-btn:hover { animation: unicorn '+r+'s linear; animation-fill-mode: forwards; }#cat-btn img { animation: rainbow 1s infinite; }'+d+'@keyframes rainbow { 0% { filter: drop-shadow('+o+' red); } 20% { filter: drop-shadow('+o+' yellow); } 40% { filter: drop-shadow('+o+' green); } 60% { filter: drop-shadow('+o+' blue); } 80% { filter: drop-shadow('+o+' violet); } 100% { filter: drop-shadow('+o+' red); } }@keyframes launch {0% {transform: none;} 100% {transform:none;}}',setCatRemovalTimer(e)"
             },
@@ -134,7 +134,8 @@
         {
             "name" : "Cyber Cat",
             "rarity" : 2,
-            "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAc9JREFUSImtlrFqwzAQhn+HLoFuGZo9eMgUaEcPhQ59A0PfodC54EIJxJA5kHcI9Rt0KHTI2CFTh9A9HbIFMrpLJS7nu7Ns51+iSGd9v07S2UCABtiVvE372qpnwdzvHsNogF3JgV0NiHBuwIKGGtim60pcTxrcYxiFTBhiYJuuSwkMABENcu24SHx/09RS4xKUzl0byOE3m98mXkz5tFNHTtKqvyZXZwG/TybRCdCt/vHlsu2Evn2/2ZhggKSdPFSyQD5eC7ZiHbgCrwNrk2pxPJaCAbLnHHxuLWeHSl/PAktpc33L2cFPqG0Fjc2KfmU8arNivgrrgHLwG67lPQfk+y4pLhJs07UZ46B5eqTPeeZFCEiSBZagUtrVFwtVXCRiWxvL06MHZ0UfWdE/6XMSXyBKqXVjqjk6VpfyRvAuckboYQP+97xy4oU72QWap0fERVK5WWqFk4pCF9HrGFzbu5rgNUCt7ZqBpia0osNru/q5JBnIXn9qwfl0FAQ24QDwcbvyBuaLca2BfDrC89O3/++ekcAqnEK55ouxaICDue4+HyqsoAongaz/oWoFp8C2YMDYcyn1bg8tSamXUm7CLdV9A2gH7CxwzUQo1OkPHKL+hw5pxFMAAAAASUVORK5CYII="
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAAAXNSR0IArs4c6QAAAc9JREFUSImtlrFqwzAQhn+HLoFuGZo9eMgUaEcPhQ59A0PfodC54EIJxJA5kHcI9Rt0KHTI2CFTh9A9HbIFMrpLJS7nu7Ns51+iSGd9v07S2UCABtiVvE372qpnwdzvHsNogF3JgV0NiHBuwIKGGtim60pcTxrcYxiFTBhiYJuuSwkMABENcu24SHx/09RS4xKUzl0byOE3m98mXkz5tFNHTtKqvyZXZwG/TybRCdCt/vHlsu2Evn2/2ZhggKSdPFSyQD5eC7ZiHbgCrwNrk2pxPJaCAbLnHHxuLWeHSl/PAktpc33L2cFPqG0Fjc2KfmU8arNivgrrgHLwG67lPQfk+y4pLhJs07UZ46B5eqTPeeZFCEiSBZagUtrVFwtVXCRiWxvL06MHZ0UfWdE/6XMSXyBKqXVjqjk6VpfyRvAuckboYQP+97xy4oU72QWap0fERVK5WWqFk4pCF9HrGFzbu5rgNUCt7ZqBpia0osNru/q5JBnIXn9qwfl0FAQ24QDwcbvyBuaLca2BfDrC89O3/++ekcAqnEK55ouxaICDue4+HyqsoAongaz/oWoFp8C2YMDYcyn1bg8tSamXUm7CLdV9A2gH7CxwzUQo1OkPHKL+hw5pxFMAAAAASUVORK5CYII=",
+            "special_card" : "catProfile.className='cyber';let e=document.createElement('style');e.innerText='.cyber{background-image:linear-gradient(to top,#46d1d1,#dd55c5,#46d1d1,#46d1d1,#46d1d1);-webkit-background-clip:text;color:transparent;}.cyber img{filter:drop-shadow(0 0 4px #dd55c5) drop-shadow(0 0 5px #46d1d1);}';document.head.append(e);"
         },
         {
             "name" : "King Cat",
@@ -190,6 +191,22 @@
             "name" : "Anime Cat",
             "rarity" : 3,
             "data" :  "iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAAAXNSR0IArs4c6QAAAWFJREFUSIm9lrFOwzAQhv+zWBi7oKpsPEEk1EztkpmXKGLhiVgQvARzFzI1QuoTsBGhLh07mgWbs3127KjhX2Kn/92Xs31WgYm12mkNAMoMpgDw3MQnbU10Loj/jqSXHJhTsfGnvFFDW7vFrXZxXo73IhaoPTYRiQlyverXTFIgVQ2oagAgSGYU8/Iq25pIxb6OqgZ6v7VjAHhfuhAzl7w+TAHhHhmzefrjMV6notSGjxHPpxK+cwJ1AFp3sOvNpfdbrLvx3sFGk9TW8lFPSeyj16d7O948vgS/xyCpuNKrJhvqxVHRYfCTliyf84m5e1WyR+bWcSo6Hfqs4DH9FhwGA7u8WhQnk/JEQcfv3j5n8z/YEPh06G0sACc2AHEjn8/mi8FllWI57F+uoMlBH3fX9lQ7oM+HZdCR/lrHNOQT//XcPHe6BOKLV5IE+bp9+8puHAmSDcoFxiDFoBgwBTD6AdJiyLbr1e7VAAAAAElFTkSuQmCC"
+        },
+        {
+            "name" : "Reaper Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAAAAXNSR0IArs4c6QAAAiJJREFUSInFV6FuIzEQfT6VxFKOdFWVBKTFKbBalZgUFwQVROqP9GB/oqw0oCjg0IGSkEqVQYrbgJDqtCUHXJiClTf27NjrZCvdQ7u2d+bNm/HYK9ARUsq1e7bWil1s/Oji3CcQG4vBGFOvi5LwF3EEtiXo26W2o/L5C5VSIsd5DC5NXGBKKREocXW+v746328sNMZky8yhLU01iZe3t2CRi15rDa31rv4DxOwISuB2cgYAeHj6EF2ib8N8PgdQBbsXW5RDwFqL2WzGzo3HY2eHndda17UiaBqAjRq/Xz6TBBwoEUfAR4yMtVY0tujo6CjZcKy1AYFcWGsxnU7ZObZPPDx9sER2cU7BEQlIUBUuR73gYy7/XcaAqvaihenDsX9fLFhjg8EASikYY7BaraJO3xcLHJ6cNMbrwqQqSCnXTonrX/es4xw4Uj4mk0nwnqUEdeiips9tczHUzYpTAtjUxc3dnwYRAKyT1BzQ7Jx7QJUKjkgKqQhzoncI+gQlQC8o33V+cGi91LiueTnqfQsR34YLNFmYGzV6dWunRNxB1OYwhawaKIpifXFc8UidJ7mQUqIsy9p31halBoDtWnjs8NqaxOOrgFMjx3AKvgpARjqGw2Fw1J8e/MPja/7Nvt/vs+PL5bI2ktwdlAAAPP/9GTWcS4Bi5/+OLvBV+G8kKLKSy9UFgKzaoCmhKgCZu4N+eHpQ/ZuUZSmKokheiDmnFF9EwQBHIDYI+AAAAABJRU5ErkJggg==",
+            "special_card" : "catProfile.style='filter:drop-shadow(0 0 2px black);color:black;';"
+        },
+        {
+            "name" : "Knight Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABkAAAAiCAYAAACqVHINAAAAAXNSR0IArs4c6QAAAd5JREFUSIm9lTFqwzAUhn+ZrsEQAsZkDW2uUV+gm86QBDL1HJkCwWdwlpzAnbrkBGnRaozAdMkB1CE8ISuSo7hufjA8y+/9n/UkywwB2oxGiuL385mF1Ji6WWAC+oK8yS7zvqCoD+BePXU9NN92UHCX2WY0Un1gTFW5YtOFs79lWQYbZlnm9FBVrpiqcgUAJuge8y6Y9qYAAD6+np2Fp9PJazqfz53jry/fOtYQG+AyXq1WAIDdbqfvKXYBCRQBwOGYaGO6yISMfTKf2/XkGx2OCeq6bhn3lQ2s6xqHY+L+GIfWYyBxHCNNUyzfLjxzIc3YJ1/+8i1CmqaI4xiMvonWlpsugiFAey1UleuYduzV2UWArmI7zx63cyMAaJoG+89x0FuHav85RtM0F3BZlopuTHHOdWy/GcmeTVEUVzmTycR/1LcLfpw5qsqDOtD5PyH9tZWP+U58/4FBIQDAOWdSyn8BZFnGWu2SUmIomJQSnHMGeBbeBCVJEmzq083dNcTMnLtLCHFzLCSH1NpZ2+1W/+/tgtlsdtPUzFmv19q7BSmKQkN8bRJCOIHA9frRwmuICTBFMFcrTJhvg3DOWdCxYhp2zcSn4GNFCKFnY8Ykao1rzLsmZpK9IXwL7NMv2oIBm72ffhIAAAAASUVORK5CYII="
+        },
+        {
+            "name" : "Sparta Cat",
+            "rarity" : 3,
+            "data" : "iVBORw0KGgoAAAANSUhEUgAAABkAAAAiCAYAAACqVHINAAAAAXNSR0IArs4c6QAAAYxJREFUSIndVjFuwzAMpAzvmeKl8Nq5D+gWoH8wvGryA/KIPsCT18B/KOCtr8hqdIknA9nTwWAs0aRC1UaGHmDEkcijeKQkG1DiC+Dm/v8AMFrfRGu4Bk8JokqZSoXQSvZ/5Era2rJScHg7TU8M2treDAYpqkbU93LiawIAkJVyXZDbuJnQQCHyUDCqTso5xJBTn260i7mUM1yDw64BGiyhk1vB5UvWBOhGC1kJ94dKhbyGStSNForKD9rWdrEQzk6y9Taj5FhUjbdKyY6zBRC6SwLXORp4mRx2DbT1kkg7huNUrkVNOEgZaBtGdUAimVuHmI6MOoUliTYLgllIXRWCqiYAfl2KqoFLxJH/p0srVran3Iwp3gNbnMCI88/0+36cuFM6gXh9iSeVIB4r1DEHv6vOV/0i2Jr0w+MxjQ3Cu9O/P+e6UId8/5gUbVBqrDdb9JDG/cAHdMldZCUYcTPSQJwUbrBQo4j7hDrl+5nUfdcgCX2cueiHORv3HSHxZCUYVQDaEG4WuOFC+AW4palKy2gm0AAAAABJRU5ErkJggg=="
         }
     ],
     "special" : {
