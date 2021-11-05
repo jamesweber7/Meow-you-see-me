@@ -1,6 +1,6 @@
 # MEOW YOU SEE ME
+## Now available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/meow-you-see-me/ihkongdgoakeofnnepndjmffbpcghgei)
 ## These cats love playing hide and seek, and so will you.
-Now available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/meow-you-see-me/ihkongdgoakeofnnepndjmffbpcghgei)
 This chrome extension hides collectable cats on every webpage you visit.
 More collectable cats with unique features are added all the time, and you don't need to redownload or update to get them!
 
