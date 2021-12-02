@@ -32,7 +32,6 @@ function loadChromeCatData(gitdata) {
 }
 
 function processCat(gitdata, stats) {
-  
   let cat = getCat(gitdata, stats);
   addCatButton(cat.data);
 
@@ -43,7 +42,6 @@ function processCat(gitdata, stats) {
   if (newSpecialCat(cat.name, stats.cats)) {
     addNewSpecialCatchEvent(cat);
   }
-  
 }
 
 function getCat(gitdata, stats) {
@@ -175,7 +173,6 @@ function isWhitelistedWebsite(data) {
 }
 
 function simplifyUrl(url) {
-  
   let ignoreStarts = ['https://', 'http://', 'www.'];
   for (let i = 0; i < ignoreStarts.length; i++) {
     let ignoreStart = ignoreStarts[i];
@@ -191,9 +188,7 @@ function simplifyUrl(url) {
       url = url.substr(0, url.indexOf(ignoreEnd));
     }
   }
-  url = url.toLowerCase();
-  
-  return url;
+  return url.toLowerCase();
 }
 
 function addMeow(gitdata) {
@@ -238,7 +233,6 @@ function unmuteMeow() {
 }
 
 function addCatButton(image) {
-  
   let body = document.body;
   let html = document.documentElement;
   let head = document.head;
@@ -291,7 +285,6 @@ function addCatButton(image) {
       incrementCatTotal();
     }
   }
-
 }
 
 function markButtonClicked() {
@@ -334,7 +327,6 @@ function addToCatlist(catName) {
 }
 
 function notifySpecialCatch(cat) {
-
   let style = document.getElementById('cat-style');
   style.innerText = style.innerText + 
   ' #cat-popup { animation: popupfade linear 4s; animation-fill-mode: forwards; } ' + 
@@ -363,7 +355,6 @@ function notifySpecialCatch(cat) {
   document.body.append(popup);
 
   setCatRemovalTimer(4);
-
 }
 
 function isSpecialRandomCat() {
@@ -376,6 +367,7 @@ function specialRandomCat(cats) {
   for (let i = 0; i < cats.length; i++) {
     totalRarity += cats[i].rarity;
   }
+
   let greatCatDecider = Math.random() * totalRarity;
   let pointer = 0;
   for (let i = 0; i < cats.length; i++) {
