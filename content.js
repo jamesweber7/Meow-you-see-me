@@ -61,7 +61,7 @@ function getCat(gitdata, stats) {
   return gitdata.default_cat;
 }
 
-function receivedMessage(message, sender, sendResponse) {
+function receivedMessage(message) {
   switch (message.title) {
     case "MUTE" : 
       muteMeow();
