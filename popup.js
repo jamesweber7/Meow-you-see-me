@@ -11,8 +11,6 @@ chrome.storage.sync.get(['catdata'], (data) => {
     }
 });
 
-loadGitCatData(processGitCatData);
-
 document.addEventListener('DOMContentLoaded', function() {
 
     primeCheckboxes();
@@ -97,34 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 }, {once : true});
-
-function processGitCatData(gitdata) {
-    processVersion(gitdata.version);
-}
-
-function loadGitCatData(callback, attempts) {
-    var xhr = new XMLHttpRequest();
-    var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4) {
-            if (this.status == 200) {
-                var gitdata = JSON.parse(this.responseText);
-                callback(gitdata);
-            } else {
-                const MAX_ATTEMPTS = 5;
-                attempts = attempts ? attempts - 1 : MAX_ATTEMPTS;
-                if (attempts > 0) {
-                    return loadGitCatData(callback, attempts);
-                } else {
-                    return alertFailedConnection();
-                }
-            }
-        }
-
-    };
-    xhr.open("GET", url, true);
-    xhr.send();
-}
 
 function alertFailedConnection() {
     document.getElementById('cata-data').innerText = "Uh Oh, Poor Connection\n" +
@@ -221,27 +191,8 @@ function createBlockedOnSiteNotification(url) {
     }
 }
 
-function processVersion(version) {
-    if (version !== chrome.runtime.getManifest().version) {
-        createNewVersionNotification();
-    }
-}
-
-function createNewVersionNotification() {
-    let notif = document.createElement('button');
-    notif.className = 'btn-sm';
-    notif.style = 'display: block; float: right; margin-right: 10px; margin-bottom: 6px;';
-    notif.innerText = 'New Version Available!';
-    notif.addEventListener('click', openVersionUpdateLink);
-    [...document.getElementsByTagName('header')][0].append(notif);
-
-    function openVersionUpdateLink() {
-        openMysmPage();
-    }
-}
-
 function openMysmPage() {
-    const url='https://github.com/jamesweber7/Meow-you-see-me/';
+    const url='https://chrome.google.com/webstore/detail/meow-you-see-me/ihkongdgoakeofnnepndjmffbpcghgei';
     window.open(url, '_blank');
 }
 
@@ -302,27 +253,60 @@ function updateTotal(total) {
 }
 
 function updateCats(cats) {
+    cats = checkForDuplicateCats(cats);
     if (cats.length) {
-        loadGitCatData(getCats);
+        getCats();
     } else {
         noCatsYetMessage();
     }
-    function getCats(gitdata) {
-        let ratio = cats.length === gitdata.cats.length ? 'All' : cats.length + '/' + gitdata.cats.length;
+    function getCats() {
+        let ratio = cats.length === jsonCatData.cats.length ? 'All' : cats.length + '/' + jsonCatData.cats.length;
         addCollectedCatsHeader(ratio);
         for (let i = 0; i < cats.length; i++) {
-            addCatProfile(findCat(gitdata.cats, cats[i]))
+            addCatProfile(findCat(jsonCatData.cats, cats[i]))
         }
+        
     }
     function noCatsYetMessage() {
         document.getElementById('cata-data').innerText = 'No special cats collected yet';
     }
 }
 
+function checkForDuplicateCats(cats) {
+    // make sure no duplicate cats exist
+    let len = cats.length;
+    for (let i = 0; i < cats.length; i++) {
+        for (let j = i + 1; j < cats.length; j++) {
+            while (cats[i] == cats[j]) {
+                cats.splice(j, 1);
+            }
+        }
+        let found = false;
+        while (!found && i < cats.length) {
+            for (let j = 0; j < jsonCatData.cats.length && !found; j++) {
+                if (cats[i] == jsonCatData.cats[j].name) {
+                    found = true;
+                }
+            }
+            if (!found)
+                cats.splice(i, 1);
+        }
+    }
+    // if change occured
+    if (len != cats.length) {
+        // update cat data
+        chrome.storage.sync.get(['catdata'], (data) => {
+            data.catdata.stats.cats = cats;
+            chrome.storage.sync.set(data);
+        });
+    }
+    return cats;
+}
+
 function findCat(cats, catName) {
     for (let i = 0; i < cats.length; i++) {
         if (cats[i].name === catName) {
-        return cats[i];
+            return cats[i];
         }
     }
 }
@@ -345,7 +329,7 @@ function addCatProfile(cat) {
     catProfile.prepend(img);
     document.getElementById('litter-box').append(catProfile);
     if (cat.special_card) {
-        new Function(["catProfile"], cat.special_card)(catProfile);
+        specialCard(cat, catProfile)
     }
 }
 

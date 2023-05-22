@@ -1,65 +1,79 @@
+setUp();
 
-loadGitCatData(loadChromeCatData);
-
-chrome.runtime.onMessage.addListener(receivedMessage);
-
-function loadGitCatData(callback) {
-  var xhr = new XMLHttpRequest();
-  var url = "https://raw.githubusercontent.com/jamesweber7/Meow-you-see-me/main/catdata.json";
-  xhr.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          var gitdata = JSON.parse(this.responseText);
-          callback(gitdata);
-      }
-  };
-  xhr.open("GET", url, true);
-  xhr.send();
+function setUp() {
+  // load Cat Data from chrome, content begins on reception
+  loadChromeCatData();
+  // Listen for Popup Event Messages
+  chrome.runtime.onMessage.addListener(receivedMessage);
 }
 
-function loadChromeCatData(gitdata) {
-  chrome.storage.sync.get(['catdata'], (data) => {
-    if (!Object.keys(data).length) {
+function loadChromeCatData() {
+  chrome.storage.sync.get(['catdata'], (chromedata) => {
+    if (!hasData(chromedata)) {
       createCatdata();
-      return loadChromeCatData(gitdata);
+      return loadChromeCatData();
     }
-    else if (isAllowedToHide(data)) {
-      processCat(gitdata, data.catdata.stats);
-      if (data.catdata.settings.volume) {
-        addMeow(gitdata);
+    else if (isAllowedToHide(chromedata)) {
+      processCat(chromedata.catdata.stats);
+      if (chromedata.catdata.settings.volume) {
+        addMeow();
       }
     }
   });
 }
 
-function processCat(gitdata, stats) {
-  let cat = getCat(gitdata, stats);
+function hasData(data) {
+  return !!Object.keys(data).length;
+}
+
+function processCat(stats) {
+  
+  let cat = getNewCat(stats);
   addCatButton(cat.data);
-
+  addCatButtonClickEvent(cat);
   if (cat.special_function) {
-    new Function(["gitdata", "stats"], cat.special_function.body)(gitdata, stats);
-  }
-
-  if (newSpecialCat(cat.name, stats.cats)) {
-    addNewSpecialCatchEvent(cat);
+    specialFunction(cat);
   }
 }
 
-function getCat(gitdata, stats) {
+function addCatButtonClickEvent(cat) {
+  let btn = document.getElementById('cat-btn');
+  btn.addEventListener('click', catclick);
+  
+  function catclick() {
+    if (btn && !isClicked(btn)) {
+      chrome.storage.sync.get(['catdata'], (chromedata) => {
+        let cats = chromedata.catdata.stats.cats;
+        
+        markButtonClicked();
+        launchCat();
+        if (newSpecialCat(cat.name, cats)) {
+          saveSpecialCatch(cat.name);
+          notifySpecialCatch(findCat(jsonCatData.cats, cat.name));
+        } else {
+          incrementCatTotal();
+        }
+      });
+    }
+  }
+}
+
+function getNewCat(stats) {
   // hundred cat, thousand cat
-  if (isSpecialTotal(gitdata.special.totals, stats)) {
-    return specialTotalCat(gitdata, stats);
+  if (isSpecialTotal(jsonCatData.special.totals, stats)) {
+    return specialTotalCat(stats);
   }
-  // charity cat
-  if (isSpecialSite(gitdata.special.sites)) {
-    return specialSiteCat(gitdata);
-  } 
+  // charity cat, casual cat, music cat
+  if (isSpecialSite(jsonCatData.special.sites)) {
+    return specialSiteCat();
+  }
   if (isSpecialRandomCat()) {
-    return specialRandomCat(gitdata.cats);
+    return specialRandomCat(jsonCatData.cats);
   }
-  return gitdata.default_cat;
+  return jsonCatData.default_cat;
 }
 
-function receivedMessage(message) {
+function receivedMessage(message, sender, sendResponse) {
   switch (message.title) {
     case "MUTE" : 
       muteMeow();
@@ -101,18 +115,18 @@ function isSpecialTotal(totals, stats) {
   return false;
 }
 
-function specialTotalCat(gitdata, stats) {
-  let totals = gitdata.special.totals;
+function specialTotalCat(stats) {
+  let totals = jsonCatData.special.totals;
   let totalCats = stats.total;
   for (let i = 0; i < totals.length; i++) {
     if (totals[i].total === (totalCats + 1)) {
       let catName = totals[i].cat;
-      return findCat(gitdata.cats, catName);
+      return findCat(jsonCatData.cats, catName);
     } 
     else if (totals[i].total <= totalCats) {
       if (!stats.cats.includes(totals[i].cat)) {
         let catName = totals[i].cat;
-        return findCat(gitdata.cats, catName);
+        return findCat(jsonCatData.cats, catName);
       }
     }
   }
@@ -130,14 +144,14 @@ function isSpecialSite(sites) {
   return false;
 }
 
-function specialSiteCat(gitdata) {
+function specialSiteCat() {
   let currentSite = simpleUrl();
-  let sites = gitdata.special.sites;
+  let sites = jsonCatData.special.sites;
   for (let i = 0; i < sites.length; i++) {
     for (let j = 0; j < sites[i].urls.length; j++) {
       if (currentSite.includes(sites[i].urls[j])) {
         let catName = sites[i].cat;
-        return findCat(gitdata.cats, catName);
+        return findCat(jsonCatData.cats, catName);
       }
     }
   }
@@ -173,6 +187,7 @@ function isWhitelistedWebsite(data) {
 }
 
 function simplifyUrl(url) {
+  
   let ignoreStarts = ['https://', 'http://', 'www.'];
   for (let i = 0; i < ignoreStarts.length; i++) {
     let ignoreStart = ignoreStarts[i];
@@ -188,12 +203,14 @@ function simplifyUrl(url) {
       url = url.substr(0, url.indexOf(ignoreEnd));
     }
   }
-  return url.toLowerCase();
+  url = url.toLowerCase();
+  
+  return url;
 }
 
-function addMeow(gitdata) {
-  let catSoundIndex = Math.floor(Math.random()*gitdata.cat_sounds.length);
-  let meow = gitdata.cat_sounds[catSoundIndex];
+function addMeow() {
+  let catSoundIndex = Math.floor(Math.random()*jsonCatData.cat_sounds.length);
+  let meow = jsonCatData.cat_sounds[catSoundIndex];
 
   let audio = document.createElement('audio');
   audio.setAttribute('autobuffer', 'autobuffer');
@@ -228,11 +245,12 @@ function unmuteMeow() {
   let btn = document.getElementById('cat-btn');
   if (isMuted(btn)) {
     btn.classList.remove('muted');
-    loadGitCatData(addMeow);
+    addMeow();
   }
 }
 
 function addCatButton(image) {
+  
   let body = document.body;
   let html = document.documentElement;
   let head = document.head;
@@ -256,7 +274,6 @@ function addCatButton(image) {
   head.append(style);
 
   let btn = document.createElement('button');
-  btn.addEventListener('click', catclick);
   btn.setAttribute('id', 'cat-btn');
   btn.setAttribute('style', 
     'border: none; ' + 
@@ -278,13 +295,6 @@ function addCatButton(image) {
   btn.append(img);
   body.append(btn);
 
-  function catclick() {
-    if (!isClicked(btn)) {
-      markButtonClicked();
-      launchCat();
-      incrementCatTotal();
-    }
-  }
 }
 
 function markButtonClicked() {
@@ -310,13 +320,9 @@ function newSpecialCat(catName, cats) {
   return !cats.includes(catName) && catName !== 'default';
 }
 
-function addNewSpecialCatchEvent(cat) {
-  document.getElementById('cat-btn').addEventListener('click', processSpecialCatch);
-
-  function processSpecialCatch() {
-    addToCatlist(cat.name);
-    notifySpecialCatch(cat);
-  }
+function specialCatchEvent(cat) {
+  addToCatlist(cat.name);
+  notifySpecialCatch(cat);
 }
 
 function addToCatlist(catName) {
@@ -327,6 +333,7 @@ function addToCatlist(catName) {
 }
 
 function notifySpecialCatch(cat) {
+
   let style = document.getElementById('cat-style');
   style.innerText = style.innerText + 
   ' #cat-popup { animation: popupfade linear 4s; animation-fill-mode: forwards; } ' + 
@@ -338,7 +345,8 @@ function notifySpecialCatch(cat) {
   popup.id='cat-popup';
   popup.style='position: fixed; right: 30px; top: 80px; width: 90px; height: auto; border: 4px solid black; background-color: rgba(255,255,255,0.5); font-size: 16px; text-align: center; font-family: Comic Sans ms; padding: 0; z-index: 10000;';
 
-  let headMessage = document.createElement('div');
+  let headMessage = document.createElement('newcat');
+  headMessage.style = "display: block; width: auto; padding: 0; margin: 0;";
   headMessage.innerText = 'New Cat!';
   popup.append(headMessage);
 
@@ -348,17 +356,19 @@ function notifySpecialCatch(cat) {
   img.id = 'cat-pop-img';
   popup.append(img);
 
-  let nameMessage = document.createElement('div');
+  let nameMessage = document.createElement('catname');
+  nameMessage.style = "display: block; width: auto; padding: 0; margin: 0;";
   nameMessage.innerText = cat.name;
   popup.append(nameMessage);
   
   document.body.append(popup);
 
   setCatRemovalTimer(4);
+
 }
 
 function isSpecialRandomCat() {
-  let percentChanceOfSpecial = 25;
+  let percentChanceOfSpecial = 50;
   return Math.random() < (percentChanceOfSpecial / 100);
 }
 
@@ -367,7 +377,6 @@ function specialRandomCat(cats) {
   for (let i = 0; i < cats.length; i++) {
     totalRarity += cats[i].rarity;
   }
-
   let greatCatDecider = Math.random() * totalRarity;
   let pointer = 0;
   for (let i = 0; i < cats.length; i++) {
@@ -385,10 +394,19 @@ function removeCatButton() {
   }
 }
 
+function saveSpecialCatch(cat) {
+  chrome.storage.sync.get(['catdata'], (data) => {
+    data.catdata.stats.total = data.catdata.stats.total + 1;
+    data.catdata.stats.cats.push(cat);
+
+    chrome.storage.sync.set(data);
+  });
+}
+
 function incrementCatTotal() {
-    chrome.storage.sync.get(['catdata'], (data) => {
-      data.catdata.stats.total = data.catdata.stats.total + 1;
-      chrome.storage.sync.set(data);
+  chrome.storage.sync.get(['catdata'], (data) => {
+    data.catdata.stats.total = data.catdata.stats.total + 1;
+    chrome.storage.sync.set(data);
   });
 }
 
