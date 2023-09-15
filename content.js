@@ -30,26 +30,30 @@ function processCat(stats) {
   
   let cat = getNewCat(stats);
   addCatButton(cat.data);
-  addCatButtonClickEvent(cat, stats.cats);
+  addCatButtonClickEvent(cat);
   if (cat.special_function) {
-    performSpecialFunction(cat);
+    specialFunction(cat);
   }
 }
 
-function addCatButtonClickEvent(cat, cats) {
+function addCatButtonClickEvent(cat) {
   let btn = document.getElementById('cat-btn');
   btn.addEventListener('click', catclick);
   
   function catclick() {
     if (btn && !isClicked(btn)) {
-      markButtonClicked();
-      launchCat();
-      if (newSpecialCat(cat.name, cats)) {
-        saveSpecialCatch(cat.name);
-        notifySpecialCatch(findCat(jsonCatData.cats, cat.name));
-      } else {
-        incrementCatTotal();
-      }
+      chrome.storage.sync.get(['catdata'], (chromedata) => {
+        let cats = chromedata.catdata.stats.cats;
+        
+        markButtonClicked();
+        launchCat();
+        if (newSpecialCat(cat.name, cats)) {
+          saveSpecialCatch(cat.name);
+          notifySpecialCatch(findCat(jsonCatData.cats, cat.name));
+        } else {
+          incrementCatTotal();
+        }
+      });
     }
   }
 }
@@ -341,7 +345,8 @@ function notifySpecialCatch(cat) {
   popup.id='cat-popup';
   popup.style='position: fixed; right: 30px; top: 80px; width: 90px; height: auto; border: 4px solid black; background-color: rgba(255,255,255,0.5); font-size: 16px; text-align: center; font-family: Comic Sans ms; padding: 0; z-index: 10000;';
 
-  let headMessage = document.createElement('div');
+  let headMessage = document.createElement('newcat');
+  headMessage.style = "display: block; width: auto; padding: 0; margin: 0;";
   headMessage.innerText = 'New Cat!';
   popup.append(headMessage);
 
@@ -351,7 +356,8 @@ function notifySpecialCatch(cat) {
   img.id = 'cat-pop-img';
   popup.append(img);
 
-  let nameMessage = document.createElement('div');
+  let nameMessage = document.createElement('catname');
+  nameMessage.style = "display: block; width: auto; padding: 0; margin: 0;";
   nameMessage.innerText = cat.name;
   popup.append(nameMessage);
   

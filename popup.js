@@ -253,6 +253,7 @@ function updateTotal(total) {
 }
 
 function updateCats(cats) {
+    cats = checkForDuplicateCats(cats);
     if (cats.length) {
         getCats();
     } else {
@@ -264,10 +265,42 @@ function updateCats(cats) {
         for (let i = 0; i < cats.length; i++) {
             addCatProfile(findCat(jsonCatData.cats, cats[i]))
         }
+        
     }
     function noCatsYetMessage() {
         document.getElementById('cata-data').innerText = 'No special cats collected yet';
     }
+}
+
+function checkForDuplicateCats(cats) {
+    // make sure no duplicate cats exist
+    let len = cats.length;
+    for (let i = 0; i < cats.length; i++) {
+        for (let j = i + 1; j < cats.length; j++) {
+            while (cats[i] == cats[j]) {
+                cats.splice(j, 1);
+            }
+        }
+        let found = false;
+        while (!found && i < cats.length) {
+            for (let j = 0; j < jsonCatData.cats.length && !found; j++) {
+                if (cats[i] == jsonCatData.cats[j].name) {
+                    found = true;
+                }
+            }
+            if (!found)
+                cats.splice(i, 1);
+        }
+    }
+    // if change occured
+    if (len != cats.length) {
+        // update cat data
+        chrome.storage.sync.get(['catdata'], (data) => {
+            data.catdata.stats.cats = cats;
+            chrome.storage.sync.set(data);
+        });
+    }
+    return cats;
 }
 
 function findCat(cats, catName) {
